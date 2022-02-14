@@ -39,17 +39,17 @@
 |Map            |map         || wrapper/empty map|
 |enum           |            || first value|
 |TimeStamp      |            |google.protobuf.Timestamp  |  |
-|Date           |            || |
+|Date           |            | google.type.Date          |  |
 
 
 
-```java
-It's easy to convert an Instant into a google.Timestamp with the new Java8 time API
+  ```java
+      It's easy to convert an Instant into a google.Timestamp with the new Java8 time API
 
-LocalDate date = ...;
-final Instant instant = java.sql.Timestamp.valueOf(date.atStartOfDay()).toInstant();        
-Timestamp t = Timestamp.newBuilder().setSeconds(instant.getEpochSecond()).build();
-Please note that Google protobuf lib contains an helper for Timestamp:
+      LocalDate date = ...;
+      final Instant instant = java.sql.Timestamp.valueOf(date.atStartOfDay()).toInstant();        
+      Timestamp t = Timestamp.newBuilder().setSeconds(instant.getEpochSecond()).build();
+      Please note that Google protobuf lib contains an helper for Timestamp:
 
-https://github.com/google/protobuf/blob/master/java/util/src/main/java/com/google/protobuf/util/Timestamps.java
-```
+      https://github.com/google/protobuf/blob/master/java/util/src/main/java/com/google/protobuf/util/Timestamps.java
+  ```
