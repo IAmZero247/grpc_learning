@@ -29,7 +29,7 @@
  
  **ps - import "google/protobuf/timestamp.proto"**
  
- **ps - import "google/type/Date.proto"**
+ **ps - import "google/type/date.proto"**
  
 | Java Type   | Proto Type  | Wrappers        | Default Value|
 |    :---:    |   :----:    |      :---:      |     :---:    |
