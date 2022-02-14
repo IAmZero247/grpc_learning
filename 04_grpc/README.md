@@ -9,3 +9,7 @@
    - Server Streaming (Pagination)
    - Client Streaming (File upload)
    - Bidirectional Streaming
+
+
+# GRPC ERROR CODES
+  https://developers.google.com/maps-booking/reference/grpc-api-v2/status_codes
