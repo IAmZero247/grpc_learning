@@ -39,7 +39,7 @@
 |double         |double      |google.protobuf.DoubeValue |0 |
 |boolean        |bool        |google.protobuf.BoolValue  |false|
 |String         |string      |google.protobuf.StringValue|empty string|
-|byte[]         |bytes       |google.protobuf.BytesValue |  |
+|byte[ ]         |bytes       |google.protobuf.BytesValue |  |
 |Collection/List|repeated    || empty list|
 |Map            |map         || wrapper/empty map|
 |enum           |            || first value|
