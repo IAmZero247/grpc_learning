@@ -25,12 +25,13 @@
 
 | Java Type   | Proto Type  | Wrappers        | Default Value|
 |    :---:    |   :----:    |      :---:      |     :---:    |
-|int            |int32       | Here's this   | |
-|long           |int64       | And more      | |
-|float          |float      ||
-|double         |double     ||
-|boolean        |bool       ||
-|String         |string     ||
-|byte[]         |bytes      ||
-|Collection/List|repeated ||
-|Map            |map      ||
+|int            |int32       | Here's this    |0 |
+|long           |int64       | And more       |0 |
+|float          |float       ||0| 
+|double         |double     ||0|
+|boolean        |bool       ||false|
+|String         |string     ||empty string|
+|byte[]         |bytes      || |
+|Collection/List|repeated   || empty list|
+|Map            |map        || wrapper/empty map|
+|enum           |           || first value|
