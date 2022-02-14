@@ -27,7 +27,7 @@
  
  **ps - import "google/protobuf/timestamp.proto"**
  
- **ps - import "google/type/Date"
+ **ps - import "google/type/Date"**
  
 | Java Type   | Proto Type  | Wrappers        | Default Value|
 |    :---:    |   :----:    |      :---:      |     :---:    |
