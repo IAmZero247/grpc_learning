@@ -5,7 +5,7 @@
 1. Client app directly invoke server method on different machine
 1. Client call to derver can be Sync (Blocking) / Async (Register a listener for a callback)
 1. RPC Types
-2.   - Unary (Request/Response) 
-3.   - Server Streaming (Pagination)
-4.   - Client Streaming (File upload)
-5.   - Bidirectional Streaming
+   - Unary (Request/Response) 
+   - Server Streaming (Pagination)
+   - Client Streaming (File upload)
+   - Bidirectional Streaming
