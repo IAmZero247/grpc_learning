@@ -85,14 +85,17 @@
   
   # Proto Messages & Enums
   
-  ![Image](https://github.com/yankils/Simple-DevOps-Project/blob/master/Devops_course.PNG)
+  ![Image](https://github.com/IAmZero247/grpc_learning/blob/main/imgs/protoc.jpg)
   
     
-[Image](https://github.com/yankils/Simple-DevOps-Project/blob/master/Devops_course.PNG)
+  [Image](https://github.com/IAmZero247/grpc_learning/blob/main/imgs/protoc_enum.jpg)
   
   # Java Interfaces And OneOf
   
- ![Image](https://github.com/yankils/Simple-DevOps-Project/blob/master/Devops_course.PNG) 
+  https://github.com/IAmZero247/grpc_learning/blob/main/imgs/java_interfaces.jpg
+  
+  https://github.com/IAmZero247/grpc_learning/blob/main/imgs/oneOf.jpg
+  
   
   
 
