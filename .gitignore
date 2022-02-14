@@ -31,6 +31,7 @@ hs_err_pid*
 
 
 ### IntelliJ IDEA ###
+03_proto/protobuf/.idea/**
 .idea
 *.iws
 *.iml
