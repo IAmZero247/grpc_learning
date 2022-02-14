@@ -23,15 +23,17 @@
 
 # Data Types
 
+## ps- import "google/protobuf/wrappers.proto";
+
 | Java Type   | Proto Type  | Wrappers        | Default Value|
 |    :---:    |   :----:    |      :---:      |     :---:    |
-|int            |int32       | Here's this    |0 |
-|long           |int64       | And more       |0 |
-|float          |float       ||0| 
-|double         |double     ||0|
-|boolean        |bool       ||false|
-|String         |string     ||empty string|
-|byte[]         |bytes      || |
+|int            |int32       |google.protobuf.Int32Value |0 |
+|long           |int64       |google.protobuf.Int64Value |0 |
+|float          |float       |google.protobuf.Float4Value|0 | 
+|double         |double      |google.protobuf.DoubeValue |0 |
+|boolean        |bool        |google.protobuf.BoolValue  |false|
+|String         |string      |google.protobuf.StringValue|empty string|
+|byte[]         |bytes       |google.protobuf.BytesValue  |  |
 |Collection/List|repeated   || empty list|
 |Map            |map        || wrapper/empty map|
 |enum           |           || first value|
