@@ -23,8 +23,8 @@
 
 # Data Types
 
-## ps- import "google/protobuf/wrappers.proto";
-## ps- import "google/protobuf/timestamp.proto"
+ **ps - import "google/protobuf/wrappers.proto"**
+ **ps - import "google/protobuf/timestamp.proto"**
 
 | Java Type   | Proto Type  | Wrappers        | Default Value|
 |    :---:    |   :----:    |      :---:      |     :---:    |
