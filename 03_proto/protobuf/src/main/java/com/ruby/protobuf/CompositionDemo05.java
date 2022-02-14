@@ -7,7 +7,7 @@ import com.ruby.models.Person;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositionDemo {
+public class CompositionDemo05 {
 
     public static void main(String[] args) {
 

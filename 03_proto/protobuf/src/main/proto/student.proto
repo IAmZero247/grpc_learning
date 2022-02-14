@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "google/type/date.proto";
+
+option java_multiple_files = true;
+option java_package = "com.ruby.models";
+
+
+message Student{
+  google.protobuf.StringValue name = 1;
+  google.protobuf.Int32Value age = 2;
+  google.protobuf.DoubleValue rating =3;
+  google.protobuf.BoolValue isMale= 4;
+  google.protobuf.Timestamp createdAt1 = 5;
+  google.protobuf.Timestamp createdAt2 = 6;
+  google.type.Date createdDate= 7;
+}

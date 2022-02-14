@@ -4,7 +4,7 @@ import com.ruby.models.BodyStyle;
 import com.ruby.models.Car;
 import com.ruby.models.Dealer;
 
-public class MapDemo {
+public class MapDemo06 {
 
     public static void main(String[] args) {
 
@@ -27,9 +27,9 @@ public class MapDemo {
                 .putModel(2020, accord)
                 .build();
 
-        System.out.println(
-                dealer.getModelOrThrow(2020).getBodyStyle()
-        );
+        System.out.println(dealer.getModelOrThrow(2020).getBodyStyle());
+        System.out.println("/********************************/");
+        System.out.println( dealer.getModelMap());
 
 
 

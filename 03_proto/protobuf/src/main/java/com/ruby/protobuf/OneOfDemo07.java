@@ -4,7 +4,7 @@ import com.ruby.models.Credentials;
 import com.ruby.models.EmailCredentials;
 import com.ruby.models.PhoneOTP;
 
-public class OneOfDemo {
+public class OneOfDemo07 {
 
     public static void main(String[] args) {
 

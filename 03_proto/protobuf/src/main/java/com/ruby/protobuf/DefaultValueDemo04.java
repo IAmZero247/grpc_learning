@@ -2,7 +2,7 @@ package com.ruby.protobuf;
 
 import com.ruby.models.Person;
 
-public class DefaultValueDemo {
+public class DefaultValueDemo04 {
 
     public static void main(String[] args) {
 
