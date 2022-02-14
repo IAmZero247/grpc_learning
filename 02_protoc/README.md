@@ -51,10 +51,32 @@
   ```java
       It's easy to convert an Instant into a google.Timestamp with the new Java8 time API
 
-      LocalDate date = ...;
-      final Instant instant = java.sql.Timestamp.valueOf(date.atStartOfDay()).toInstant();        
-      Timestamp t = Timestamp.newBuilder().setSeconds(instant.getEpochSecond()).build();
-      Please note that Google protobuf lib contains an helper for Timestamp:
+     public static Timestamp convertLocalDateTimeToGoogleTimestamp(LocalDateTime localDateTime) {
+        Instant instant = localDateTime.toInstant(ZoneOffset.UTC);
+        Timestamp result = Timestamp.newBuilder()
+                .setSeconds(instant.getEpochSecond())
+                .setNanos(instant.getNano())
+                .build();
+        return result;
+    }
+
+    public static Timestamp convertLocalDateTimeToGoogleTimestampForDate(LocalDateTime localDateTime) {
+        Instant instant = Instant.from( localDateTime.toLocalDate().atStartOfDay().toInstant(ZoneOffset.UTC));
+        Timestamp result = Timestamp.newBuilder()
+                .setSeconds(instant.getEpochSecond())
+                .setNanos(instant.getNano())
+                .build();
+
+        return result;
+    }
+
+    public static com.google.type.Date convertLocalDateTimeToGoogleDate(LocalDateTime localDateTime) {
+        com.google.type.Date result = com.google.type.Date.newBuilder().setYear(localDateTime.getYear())
+                .setMonth(localDateTime.getMonthValue())
+                .setDay(localDateTime.getDayOfMonth())
+                .build();
+        return result;
+    }
 
       https://github.com/google/protobuf/blob/master/java/util/src/main/java/com/google/protobuf/util/Timestamps.java
   ```
