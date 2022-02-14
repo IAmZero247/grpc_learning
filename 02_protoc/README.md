@@ -20,3 +20,9 @@
 1. Changing type: 
       - int32- int64 is okea
       - int64 - int32 might create problem
+
+
+| Java Type   | Proto Type  | Wrappers        | Default Value|
+|    :---:    |   :----:    |      :---:      |     :---:    |
+| Header      | Title       | Here's this   | |
+| Paragraph   | Text        | And more      | |
