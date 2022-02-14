@@ -21,8 +21,14 @@
       - int32- int64 is okea
       - int64 - int32 might create problem
 
+# Data Types
 
 | Java Type   | Proto Type  | Wrappers        | Default Value|
 |    :---:    |   :----:    |      :---:      |     :---:    |
-| Header      | Title       | Here's this   | |
-| Paragraph   | Text        | And more      | |
+|int        |int32       | Here's this   | |
+|long       |int64       | And more      | |
+|float      |float      ||
+|double     |double     ||
+|boolean    |bool       ||
+|String     |string     ||
+|byte[]     |bytes      ||
