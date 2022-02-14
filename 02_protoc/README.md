@@ -24,6 +24,7 @@
 # Data Types
 
 ## ps- import "google/protobuf/wrappers.proto";
+## ps- import "google/protobuf/timestamp.proto"
 
 | Java Type   | Proto Type  | Wrappers        | Default Value|
 |    :---:    |   :----:    |      :---:      |     :---:    |
@@ -33,7 +34,22 @@
 |double         |double      |google.protobuf.DoubeValue |0 |
 |boolean        |bool        |google.protobuf.BoolValue  |false|
 |String         |string      |google.protobuf.StringValue|empty string|
-|byte[]         |bytes       |google.protobuf.BytesValue  |  |
-|Collection/List|repeated   || empty list|
-|Map            |map        || wrapper/empty map|
-|enum           |           || first value|
+|byte[]         |bytes       |google.protobuf.BytesValue |  |
+|Collection/List|repeated    || empty list|
+|Map            |map         || wrapper/empty map|
+|enum           |            || first value|
+|TimeStamp      |            |google.protobuf.Timestamp  |  |
+|Date           |            || |
+
+
+
+```java
+It's easy to convert an Instant into a google.Timestamp with the new Java8 time API
+
+LocalDate date = ...;
+final Instant instant = java.sql.Timestamp.valueOf(date.atStartOfDay()).toInstant();        
+Timestamp t = Timestamp.newBuilder().setSeconds(instant.getEpochSecond()).build();
+Please note that Google protobuf lib contains an helper for Timestamp:
+
+https://github.com/google/protobuf/blob/master/java/util/src/main/java/com/google/protobuf/util/Timestamps.java
+```
